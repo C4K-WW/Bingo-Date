@@ -71,3 +71,17 @@ function showSlides(n) {
 
 
 /*Search code section */
+
+function filterSearch() {
+    var username = document.getElementById('search-input').value;
+    var profile = document.getElementsByClassName('profile');
+    // var usernames = []
+    for (i = 0; i < profile.length; i++) {
+        var profileInfo = profile[i].children[1].innerText;
+        if (profileInfo.indexOf(username) != -1) {
+            profile[i].parentNode.style.display = "block";
+        } else {
+            profile[i].parentNode.style.display = "none";
+        }
+    }
+}

@@ -41,33 +41,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// const pictures = document.querySelectorAll(".mySlides")
 
-// (function slidesme() {
-//   pictures.forEach(picture =>  {
-//     let randomPositions = Math.floor(Math.random() * 26)
-//     picture.style.order = randomPositions
-//   })
-// }) ()
-
-// var header = function(){
-//   document.getElementsByTagName('header')[0].style = 
-//   "margin-top: 10px; text-align: center; font-size: 40px; background:repeat-x; "
-// }
-
-// header();
-
-// function checkUsername(){
-//   var elMsg = document.getElementsById('feedback');
-//   var elUsername = document.getElementsById('username');
-//   if (elUsername.value.length < 5){
-//     elMsg.textContent = 'Username too short!';
-//   }else{
-//     elMsg.textContent ='Strong';
-//   }
-// }
-
-// checkUsername();
 
 
 /*Search code section */
@@ -75,13 +49,47 @@ function showSlides(n) {
 function filterSearch() {
     var username = document.getElementById('search-input').value;
     var profile = document.getElementsByClassName('profile');
-    // var usernames = []
+    var gender = document.getElementsByClassName('gender-input');
+    var selectedGenders = []
+    for (i = 0; i < gender.length; i++) {
+        if (gender[i].checked) {
+            selectedGenders.push(gender[i].defaultValue)
+
+        }
+    }
+    console.log(selectedGenders)
+        // var usernames = []
     for (i = 0; i < profile.length; i++) {
-        var profileInfo = profile[i].children[1].innerText;
-        if (profileInfo.indexOf(username) != -1) {
+        var userNameInfo = profile[i].children[1].innerText;
+        var genderInfo = profile[i].children[3].innerText;
+        let userNameMatches = username === "" || (userNameInfo.indexOf(username) != -1)
+        var genderMatches = selectedGenders.length === 0 || selectedGenders.some(gender => genderInfo.indexOf(gender) != -1)
+
+        // find profile children 3 inner text and call it genderInfo
+        // if (userNameInfo.indexOf(username) != -1)  && ()
+        if (userNameMatches && genderMatches) {
             profile[i].parentNode.style.display = "block";
         } else {
             profile[i].parentNode.style.display = "none";
         }
     }
 }
+
+
+// $(function() {
+//     var $ages = $('#ages');
+//     var $agesRange = $('#ages-range');
+
+//     $("#slider").slider({
+//         range: true,
+//         min: 0,
+//         max: 90,
+//         values: [25, 85],
+//         slide: function(event, ui) {
+//             $ages.val('$' + ui.values[0] + ' -$' + ui.values[1]);
+//         }
+//     });
+//     $ages
+//         .val('$' + $agesRange.slider('values', 0) +
+//             ' -$' + $agesRange.slider('values', 1));
+// });

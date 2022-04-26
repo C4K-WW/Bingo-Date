@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box -moz-text-size-adjust: 100%;
+    box-sizing: border-box -moz-text-size-adjust 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font: normal 100%/1.5 georgia;
@@ -12,7 +12,7 @@ body {
 }
 
 .mySlides {
-    display: none margin-bottom: -50px;
+    display: none margin-bottom -50px;
 }
 
 img {
@@ -161,7 +161,7 @@ label i:hover {
     max-width: 750px;
     position: relative;
     margin: auto;
-    margin-bottom: -302px;
+    margin-bottom: -343px;
     margin-top: 250px;
 }
 
@@ -557,10 +557,6 @@ label.warning {
 .search-form {
     font-weight: bold;
     position: relative;
-}
-
-.search-input {
-    /*position: absolute;*/
 }
 
 i.search-icon {

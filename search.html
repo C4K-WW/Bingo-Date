@@ -32,14 +32,40 @@
 				</ul> -->
         </div>
     </header>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Search by username</legend>
+                <input id="search-input" type="search" name="search" placeholder="Enter username" class="search-input" />
+                <!-- <input type="submit" name="search" onclick="filterSearch()" value="search"> -->
+                <i class="fa fa-search fa-2x" class="search-icon" onclick="filterSearch()"></i>
+            </fieldset>
+        </form>
 
-    <form>
-        <p class="search-form">Search by username</p>
-        <input id="search-input" type="search" name="search" placeholder="Enter username" class="search-input" />
-        <!-- <input type="submit" name="search" value="search"> -->
-        <i class="fa fa-search fa-2x" class="search-icon" onclick="filterSearch()"></i>
+        <form>
+            <fieldset>
+                <legend>Search by gender </legend>
 
-    </form>
+                Male<input class="gender-input" type="checkbox" name="Gender" value="Male" checked="checked" /> Female
+                <input class="gender-input" type="checkbox" name="Gender" value="Female" /> Trans
+                <input class="gender-input" type="checkbox" name="Gender" value="Trans" /> Asexual
+                <input class="gender-input" type="checkbox" name="Gender" value="Asexual" />
+                <i class="fa fa-search fa-2x" class="search-icon" onclick="filterSearch()"></i>
+
+            </fieldset>
+        </form>
+
+
+
+        <!-- <legend>Search by age</legend>
+        <input type="text" id="ages">
+        <h2 class="demoHeaders">Slider by age</h2>
+        <div id="ages-range"></div> -->
+
+
+
+
+    </div>
 
     <div class="search-img-container">
         <div class="search-info">
@@ -47,10 +73,11 @@
             <div class="profile" id="back-profile"><a href="profiles/debbies.html">DEBBIE, London</a>
                 <p><a href="#">Username: beautylove</a></p>
                 <p>Age : 26</p>
+                <p>Gender : Female</p>
                 <P>Relationship Status: DIVORCED</P>
                 <P>Employment:Nurse</P>
                 <P>Looking For: RELATIONSHIP</P>
-                <p class="text">Are you interested!</p>
+
             </div>
         </div>
 
@@ -59,11 +86,12 @@
             <div id="back-profile" class="profile">
                 <a href="profiles/Ilias.html">Ilia, Surrey</a>
                 <p><a href="#">Username: calculatorman</a></p>
-                <p>Age : 40</p>
+                <p>Age :40</p>
+                <p>Gender : Male</p>
                 <P>Relationship Status: SINGLE</P>
                 <P>Employment: WEB DESIGNER</P>
                 <P>Looking For: CASUAL RELATIONSHIP</P>
-                <p class="text">Are you interested!</p>
+
             </div>
         </div>
 
@@ -72,13 +100,311 @@
             <div id="back-profile" class="profile"><a href="Profile">LORA, Chingford</a>
                 <p><a href="#">Username: lovenight</a></p>
                 <p>Age :39 </p>
+                <p>Gender : Female</p>
                 <P>Relationship Status: SEPERATED</P>
                 <P>Employment: MODEL</P>
                 <P>Looking For: RELATIONSHIP</P>
-                <p class="text">Are you interested!</p>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Man2.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">VEE, Deptford</a>
+                <p><a href="#">Username: davee</a></p>
+                <p>Age :49 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: BUSINESSMAN</P>
+                <P>Looking For: MARRIAGE</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman12.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">REBECCA, Portmouth</a>
+                <p><a href="#">Username: beckysmooth</a></p>
+                <p>Age :25 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: SELF EMPLOYED</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Man3.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">STEVE, Devon</a>
+                <p><a href="#">Username: steveman</a></p>
+                <p>Age 62: </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: NETWORKING</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman-01.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">CAROL, Manchester</a>
+                <p><a href="#">Username: carolred</a></p>
+                <p>Age :32 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: HAIR DRESSER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman2.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">JESSICA, Leeds</a>
+                <p><a href="#">Username: jessyblonde</a></p>
+                <p>Age :30 </p>
+                <p>Gender : Asexual</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: MODEL</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/business-woman-01.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">MRS B, London</a>
+                <p><a href="#">Username: shadowb</a></p>
+                <p>Age :28 </p>
+                <p>Gender : Trans</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: ACCOUNTANT</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/businessman-03.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">SHAUN, Surrey</a>
+                <p><a href="#">Username:shineman</a></p>
+                <p>Age: 58 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: WIDOWED</P>
+                <P>Employment: ENGINEER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman3.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">DIANA, Leceister</a>
+                <p><a href="#">Username: lastlove</a></p>
+                <p>Age: 27</p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: BANKER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/Woman4.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">JANE, Luton</a>
+                <p><a href="#">Username: janejane</a></p>
+                <p>Age: 33 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment:PILOT</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/Woman5.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">REBECCA, Manchester</a>
+                <p><a href="#">Username: beckydiamond</a></p>
+                <p>Age: 35 </p>
+                <p>Gender : Trans</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment:PHOTOGRAPHER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/businessman-02.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">MARK, Manchester</a>
+                <p><a href="#">Username: manlikemark</a></p>
+                <p>Age: 30 </p>
+                <p>Gender : Asexual</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: IT</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Doctor.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">DOMINICA, Canning Town</a>
+                <p><a href="#">Username: dom</a></p>
+                <p>Age: 29 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: DOCTOR</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/businessman-01.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">LAZLO BOSCAL, London</a>
+                <p><a href="#">Username: javaguru</a></p>
+                <p>Age: 55 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: MARRIED</P>
+                <P>Employment: SELF EMPLOYED</P>
+                <P>Looking For: CASUAL RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Man.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">PETER, Kent</a>
+                <p><a href="#">Username: callmep</a></p>
+                <p>Age: 65 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: WEB DEVELOPER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman6.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">THERESA, London</a>
+                <p><a href="#">Username: tgirllove</a></p>
+                <p>Age: 34 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: MODEL</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/Woman7.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">DIANA, Newcastle</a>
+                <p><a href="#">Username: dina</a></p>
+                <p>Age: 30 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status:SEPERATED</P>
+                <P>Employment:AIR HOSTEL</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman8.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">MANDISA, Kent</a>
+                <p><a href="#">Username: millionairegirl</a></p>
+                <p>Age: 34 </p>
+                <p>Gender : Asexual</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: MATHEMATICIAN</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/man-01.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">HAMIlTON, Leyton</a>
+                <p><a href="#">Username: hashman</a></p>
+                <p>Age:31 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: SOLICITOR</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/Woman9.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">MAGGY, Watford</a>
+                <p><a href="#">Username: maggylove</a></p>
+                <p>Age:30</p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: SELF EMPLOYMENT</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman10.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">JUDITH, Leeds</a>
+                <p><a href="#">Username: judithshadow</a></p>
+                <p>Age: 28 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: MODEL</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/business-woman-03.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">ALEX, London</a>
+                <p><a href="#">Username: handsomealex</a></p>
+                <p>Age:48 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: TEACHER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+
+        </div>
+        <div class="search-info">
+            <img src="img/business-woman-02.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">JUNE, Liverpool</a>
+                <p><a href="#">Username: love3go</a></p>
+                <p>Age: 36 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: DIVORCED</P>
+                <P>Employment: AUTHOR</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Woman13.jpg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">CHIO, Birmingham</a>
+                <p><a href="#">Username: chio4u</a></p>
+                <p>Age: 32 </p>
+                <p>Gender : Female</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment:ACTRESS</P>
+                <P>Looking For: RELATIONSHIP</P>
+
+            </div>
+        </div>
+        <div class="search-info">
+            <img src="img/Businessman.jpeg" style="width:100%" height="650">
+            <div id="back-profile" class="profile"><a href="Profile">NICK, London</a>
+                <p><a href="#">Username: smoothme212</a></p>
+                <p>Age: 37 </p>
+                <p>Gender : Male</p>
+                <P>Relationship Status: SINGLE</P>
+                <P>Employment: SOFTWARE DEVELOPER</P>
+                <P>Looking For: RELATIONSHIP</P>
+
             </div>
         </div>
     </div>
+
+
 
 
     <!-- <footer>
@@ -92,8 +418,14 @@
     	</ul>
     </footer> -->
 
-
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/dating.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+
+
+
 </body>
 
 </html>

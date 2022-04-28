@@ -80,7 +80,7 @@ function filterSearch() {
 //     var $ages = $('#ages');
 //     var $agesRange = $('#ages-range');
 
-//     $("#slider").slider({
+//     $("#ages-range").slider({
 //         range: true,
 //         min: 0,
 //         max: 90,

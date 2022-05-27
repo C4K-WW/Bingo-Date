@@ -46,34 +46,34 @@ function showSlides(n) {
 
 /*Search code section */
 
-function filterSearch() {
-    var username = document.getElementById('search-input').value;
-    var profile = document.getElementsByClassName('profile');
-    var gender = document.getElementsByClassName('gender-input');
-    var selectedGenders = []
-    for (i = 0; i < gender.length; i++) {
-        if (gender[i].checked) {
-            selectedGenders.push(gender[i].defaultValue)
+// function filterSearch() {
+//     var username = document.getElementById('search-input').value;
+//     var profile = document.getElementsByClassName('profile');
+//     var gender = document.getElementsByClassName('gender-input');
+//     var selectedGenders = []
+//     for (i = 0; i < gender.length; i++) {
+//         if (gender[i].checked) {
+//             selectedGenders.push(gender[i].defaultValue)
 
-        }
-    }
-    console.log(selectedGenders)
-        // var usernames = []
-    for (i = 0; i < profile.length; i++) {
-        var userNameInfo = profile[i].children[1].innerText;
-        var genderInfo = profile[i].children[3].innerText;
-        let userNameMatches = username === "" || (userNameInfo.indexOf(username) != -1)
-        var genderMatches = selectedGenders.length === 0 || selectedGenders.some(gender => genderInfo.indexOf(gender) != -1)
+//         }
+//     }
+//     console.log(selectedGenders)
+//         // var usernames = []
+//     for (i = 0; i < profile.length; i++) {
+//         var userNameInfo = profile[i].children[1].innerText;
+//         var genderInfo = profile[i].children[3].innerText;
+//         let userNameMatches = username === "" || (userNameInfo.indexOf(username) != -1)
+//         var genderMatches = selectedGenders.length === 0 || selectedGenders.some(gender => genderInfo.indexOf(gender) != -1)
 
-        // find profile children 3 inner text and call it genderInfo
-        // if (userNameInfo.indexOf(username) != -1)  && ()
-        if (userNameMatches && genderMatches) {
-            profile[i].parentNode.style.display = "block";
-        } else {
-            profile[i].parentNode.style.display = "none";
-        }
-    }
-}
+//         // find profile children 3 inner text and call it genderInfo
+//         // if (userNameInfo.indexOf(username) != -1)  && ()
+//         if (userNameMatches && genderMatches) {
+//             profile[i].parentNode.style.display = "block";
+//         } else {
+//             profile[i].parentNode.style.display = "none";
+//         }
+//     }
+// }
 
 
 // $(function() {

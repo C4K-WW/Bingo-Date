@@ -498,6 +498,7 @@ b {
 form fieldset {
     margin: auto;
     margin-bottom: 32px;
+    
 }
 
 fieldset {
@@ -559,11 +560,60 @@ label.warning {
     position: relative;
 }
 
-i.search-icon {
-    margin-bottom: -30px;
+#search-input{
+   
+    width: 200px;
+    height: 31px;
+    position: absolute;
+
 }
 
-.fa-search {
+
+i.fa.fa-search.fa-2x{
     color: black;
-    /*float: right;*/
+    font-size: 20.5px;
+    /*margin-top: -1px;*/
+    /*background-color: black;*/
+    /*border-radius: 4px;*/
+    /*margin-bottom: 0px;*/
+    /*padding: 1px 2px 2px 1px;*/
+    cursor: pointer;
+   position: relative;
+   right:-176px;
+   top: 5px;
+}
+
+
+/* form section*/
+
+.form-container {
+    margin-top: 290px;
+}
+
+.search-img-container {
+    margin-top: 207px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap; 
+   /* justify-content: center;
+    flex-basis: auto;*/
+}
+
+.search-info {
+    max-width: 750px;
+    margin: auto;
+
+   
+
+}
+
+.search-info img {
+    margin-bottom: -20px;
+    margin-top: 120px;
+}
+
+#ages-range {
+    width: 250px;
+    right: -38px;
 }

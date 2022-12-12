@@ -1,81 +1,95 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-	<title>Login Bingo</title>
-	<link rel="stylesheet" type="text/css" href="css/dating.css">
-	<link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
-	</head>
-	<body>
-		<header class="masthead">
-			<h1 id="logo">
-			<img id="logo-img" src="img/blog.png" height="100">
-		    </h1>
-			<h1 class="header">Bingo</h1>
-			
-		
-		<div class="nav-top">
-			 <a class="links-to-home"href="index.html"><img class="img" src="img/button1.png" ></a>
-			<!-- <input type="checkbox" class="nav-check" id="nav-check">
-			<label class="nav-label" for="nav-check">
-				<i class="fa fa-align-justify fa-2x" class="nav-btn" id="button" ></i>
-			</label>
-			
-			    <ul class="nav">
-					<li><a href="dating.html">Home</a></li>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#search">Search</a></li>
-					<li><a href="#payment">Payment</a></li>
-					<li><a href="#contact us">Contact Us</a></li>
-					<li><a href="#about us">About Us</a></li>
-				</ul> -->
-		</div>
-		</header>
-
-		<!--   <div class="row justify-content-md-center">
-                <div class="col-md-5">
-                    <form >
-                        <input id="anchor" type="hidden" name="anchor" value="">
-                        <input type="hidden" name="logintoken" value="neaFOnFL1TuFNwpCKj8fJygSIN6JVJS1">
-                        <div class="form-group">
-                            <label for="username" class="sr-only">
-                                    Username
-                            </label>
-                            <input type="text" name="username" id="username"
-                                class="form-control"
-                                value=""
-                                placeholder="Username"
-                                autocomplete="username">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="sr-only">Password</label>
-                            <input type="password" name="password" id="password" value=""
-                                class="form-control"
-                                placeholder="Password"
-                                autocomplete="current-password">
-                        </div>
-                            <div class="rememberpass mt-3">
-                                <input type="checkbox" name="rememberusername" id="rememberusername" value="1"  />
-                                <label for="rememberusername">Remember username</label>
-                            </div>
-
-                        <button type="submit" class="btn btn-primary btn-block mt-3" id="loginbtn">Log in</button>
-                    </form>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login Bingo</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/dating.css">
+        <link rel="stylesheet" href="img/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="masthead">
+            <h1 id="logo">
+                <img id="logo-img" src="img/blog.png" height="100">
+            </h1>
+            <h1 class="header">Bingo Date</h1>
+            <div class="nav-top">
+                <a class="links-to-home" href="index.html"><img class="img" src="img/button1.png"></a>
+            </div>
+        </header>
+        <main class="main-container">
+            <div class="tab-container" id="tab-container">
+                <div class="tabs">
+                    <div id="signInTab" class="tab active" onclick="onSignIn()">Sign In</div>
+                    <div id="registerTab" class="tab" onclick="onRegister()">Register</div>
                 </div>
- -->
-	
+                <form method="post" id="login" >
+                    <div id="signInTabContent" class="tab-content active">
+                        <label for="username-input">Username or email:</label><br>
+                        <input type="text" name="usernameInput" size="20" maxlength="30" placeholder="username or email" id="usernameInput" ></br>
+                        <label for="password-input">Password:</label><br>
+                        <input type="password"  name="passwordInput"  size="20" maxlength="30" placeholder="password" id="passwordInput" ><br>
+                        <input type="checkbox" id="showPwd">
+                        <label for="showPwd">show password</label><br>
+                        <input type="submit" id="sign-in" value="Sign in" size="25" onclick="onSignInSubmit()">
+                        <p id="offer"><a href="reset-password.html">Forgotten your username or password?</a></p>
+                    </div>
+                </form>
+            
+                <form method="post" id="register1"  name="register">
+                    <div id="registerTabContent" class="tab-content">
+                        <div class="name">
+                            <label for="name" class="required">Full name:</label> <br>
+                            <input type="text" name="name" size="20" placeholder="enter your name"  maxlength="30" id="registerNameInput" required >
+                        </div>
+                        <div class="username1">
+                            <label for="username2" class="required">Username:</label> <br>
+                            <input type="text" name="usernameInput" placeholder="username" size="20" maxlength="30" id="registerUsernameInput" required >
+                        </div>
+                        <div class="email">
+                            <label for="email" class="required">Email:</label> <br>
+                            <input type="email" name="email" placeholder="you@example.com" size="20" maxlength="30" id="registerEmailInput" required >
+                        </div>
+                        <div class="email">
+                            <label for="email" class="required">Email confirmation: </label><br>
+                            <input type="email" name="email" placeholder="you@example.com" size="20" maxlength="30" id="registerEmailConfirmInput" required  >
+                        </div>
+                        <div class="password1">
+                            <label for="password" class="required">Password:</label> <br>
+                            <input type="password" name="password" placeholder="password" size="20" maxlength="30" id="registerPasswordInput" required >
+                        </div>
+                        <div>
+                          <input type="submit" id="register" value="Register" size="25" onclick="onRegisterSubmit()">
+                        </div>
 
-	<!-- <footer>
-
-    	<ul class="footer">
-    		<li><a href="#">Payment</a></li>
-    		<li ><a href="#">Contact Us</a></li>
-    		<li><a href="#">BliDate4U Testimony</a></li>
-    		<li><a class="terms" href="#">Terms and Conditions</a></li>
-
-    	</ul>
-    </footer> -->
+                    <a id="rem_und" href="membership.html">Want to be a full member? <br> click here</a>
+                    </div>
+                </form>
+            
+            </div>
+        </main>
+               
 
 
-	<script type="text/javascript" src="js/dating.js"></script>
-	</body>
-	</html>
+                <!-- <footer>
+
+        	<ul class="footer">
+        		<li><a href="#">Payment</a></li>
+        		<li ><a href="#">Contact Us</a></li>
+        		<li><a href="#">BliDate4U Testimony</a></li>
+        		<li><a class="terms" href="#">Terms and Conditions</a></li>
+
+        	</ul>
+        </footer> -->
+
+
+
+                <script src="js/jquery-2.2.4.min.js"></script>
+                <script src="js/jquery-ui.js"></script>
+                <script src="js/utilities.js"></script>
+                <script src="js/search.js"></script>
+                <script src="js/membership-counter.js"></script>
+                <script src="js/validation.js"></script>
+                <script src="js/regValidation.js"></script>   
+                <script src="js/login.js"></script>          
+    </body>
+    </html>

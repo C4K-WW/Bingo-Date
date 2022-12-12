@@ -10,28 +10,37 @@
 			<h1 id="logo">
 			<img id="logo-img" src="img/blog.png" height="100">
 		    </h1>
-			<h1 class="header">Bingo</h1>
+			<h1 class="header">Bingo Date</h1>
 			
 		
 		<div class="nav-top">
-			 <a class="links-to-home"href="dating.html"><img class="img" src="img/button1.png" ></a>
-			<!-- <input type="checkbox" class="nav-check" id="nav-check">
-			<label class="nav-label" for="nav-check">
-				<i class="fa fa-align-justify fa-2x" class="nav-btn" id="button" ></i>
-			</label>
-			
-			    <ul class="nav">
-					<li><a href="dating.html">Home</a></li>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#search">Search</a></li>
-					<li><a href="#payment">Payment</a></li>
-					<li><a href="#contact us">Contact Us</a></li>
-					<li><a href="#about us">About Us</a></li>
-				</ul> -->
+			 <a class="links-to-home"href="index.html"><img class="img" src="img/button1.png" ></a>
 		</div>
 		</header>
 
-		
+		<div id="wrapper">
+                <label for="firstname">First name:</label><br>
+                <input type="text" name="firstname" size="20" maxlength="30"><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" name="lastname" size="20" maxlength="30"><br>
+                <label for="pay-type">Payment type:</label><br>
+                <select id="pay-type" name="payment" maxlength="30">
+			  	<option value="Visa"></option>
+				<option value="debit-card">Visa</option>
+				<option value="debit-other">Delta</option>
+				<option value="credit-card">Mastercard</option>
+				<option value="credit-other">Maestro</option>
+				<option value="paypal">Paypal<i fa fab fa-cc-paypal></i></option>			 		
+			</select><br>
+                <label for="card-num">Card number:</label><br>
+                <input type="number" name="card-number"><br>
+                <label for="v-from">Valid from:</label><br>
+                <input type="month" id="v-from" name="vFrom"><br>
+                <label for="expiry-date">Expiry date:</label><br>
+                <input type="month" id="expiry-date" name="expiry-date"><br>
+                <label for="sec-num">Security No.</label><br>
+                <input type="number" name="sec-num"><br>
+            </div>
 	
 
 	<!-- <footer>
@@ -45,7 +54,10 @@
     	</ul>
     </footer> -->
 
-
-	<script type="text/javascript" src="js/dating.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/search.js"></script>
+         <!--<script src="js/login.js"></script>
+	        <script src="js/dating.js"></script> -->
 	</body>
 	</html>

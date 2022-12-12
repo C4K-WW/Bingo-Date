@@ -1,0 +1,623 @@
+* {
+    box-sizing: border-box -moz-text-size-adjust 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font: normal 100%/1.5 georgia;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background-color: #f05222;
+}
+
+.mySlides {
+    display: none margin-bottom -50px;
+}
+
+img {
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+.masthead {
+    padding: 1em 0;
+}
+
+
+/*=============logo color transformation===============*/
+
+#logo-img {
+    mix-blend-mode: difference;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.header {
+    font-size: 55px;
+    margin: 0;
+    color: #00000099;
+    text-align: center;
+}
+
+
+/*==========nav section============*/
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #02020275;
+    border-radius: 4px;
+    width: 20%;
+    overflow: hidden;
+    /*text-align: center;*/
+    display: none;
+}
+
+.nav li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.nav a {
+    color: #ffffff94;
+    display: block;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    border-bottom: 1px solid #00000040;
+    border-left: 1px solid #00000040;
+}
+
+.nav a:hover {
+    background-color: #cf0000;
+    color: black;
+}
+
+
+/*sudo selector called "checked" this allows us to style nav-check if is actually checked.
+When its not checked ccs rules will not applied.
+siblings seclector ~ "Till Bar"*/
+
+.nav-check:checked~.nav {
+    display: block;
+}
+
+.nav-check {
+    position: absolute;
+    top: -3em;
+}
+
+.nav-top {
+    overflow: hidden;
+    padding: 10px;
+    margin-top: -203px;
+}
+
+.nav-label {
+    display: block;
+    cursor: pointer;
+}
+
+label i {
+    display: inline-block;
+    padding: .5rem .7rem;
+    background-color: black;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    color: #f05222;
+    font-weight: bold;
+    font-size: 1.120rem;
+    font-family: "PT sans narrow", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 250ms linear;
+}
+
+label i:hover {
+    background-color: #02020275;
+    color: black;
+    border-radius: 18px;
+    padding: none;
+}
+
+.links-to-home {
+    float: right;
+    clear: right;
+    margin-right: -15px;
+    font-size: 120;
+}
+
+.img {
+    mix-blend-mode: color-burn;
+}
+
+#button {
+    font-size: 38px;
+    padding: 2px 3px 1px 5px;
+}
+
+
+/*log-in section*/
+
+.nav-top p:first-child {
+    float: right;
+    margin-top: 0em;
+}
+
+.nav-top i:last-child {
+    margin: 1.5px;
+    margin-top: 0em;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+    margin-bottom: -343px;
+    margin-top: 250px;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -64px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover,
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -65px;
+    width: 100%;
+    text-align: center;
+    animation: flash 1s ease-out infinite;
+}
+
+@keyframes flash {
+    from {
+        text: linear-gradient(to top, #ffc900, #fadb66);
+        color: red;
+    }
+}
+
+
+/*profile text */
+
+.profile {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    bottom: -40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile a {
+    text-decoration: none;
+    color: white;
+}
+
+.username {
+    text-decoration: none;
+    color: white;
+}
+
+#back-profile {
+    background: url("../img/contact-bg.jpg") no-repeat center;
+    border-radius: 15px;
+}
+
+
+/*onlick Yes or No button */
+
+button {
+    text-decoration: none;
+    font-family: sans-serif;
+    -webkit-text-stroke: 1px blue;
+    font-size: 1.9em;
+    /* display: block;*/
+    cursor: pointer;
+}
+
+.move-button {
+    position: relative;
+    bottom: -60px;
+}
+
+
+/* Hide search info sections */
+
+.search-info {
+    display: none;
+}
+
+
+/* Number text (1/6 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    /*position: relative;
+bottom: 177px;*/
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.section-1 {
+    display: block;
+    margin-top: 410px;
+    text-align: center;
+}
+
+.section-1 p {
+    font-size: 30px;
+    /*color: white;*/
+}
+
+p strong {
+    display: block;
+}
+
+.section-2 {
+    text-align: center;
+}
+
+.join-button {
+    display: inline-block;
+    line-height: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+    background: url(../img/button1.png) right center no-repeat #eeeeee;
+    padding: 15px 45px 15px 25px;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.join-button:hover {
+    color: #fff;
+    background: url(../img/button1_over.png) right center no-repeat #f05222;
+}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+}
+
+#flex-container div {
+    flex-basis: 206px;
+    border: 3px solid rgba(2, 2, 2, 0.73);
+    padding: 7px 7px 7px 6px;
+    margin: 3px;
+}
+
+.box1,
+.border-bottom {
+    text-align: center;
+}
+
+
+/*.border-bottom{
+border-bottom:2px solid black;
+
+}*/
+
+.offers {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/*=======footer nav bottom=======*/
+
+.footer {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.footer p {
+    float: left;
+    bottom: 210px;
+}
+
+
+/*profiles css section*/
+
+#profile-container {
+    margin-top: 207px;
+    position: relative;
+}
+
+.profile-wrapper {
+    max-width: 750px;
+    position: relative;
+    margin: auto;
+}
+
+.profile-details {
+    text-align: center;
+    background: url("../img/contact-bg.jpg") no-repeat center;
+    color: white;
+    border-radius: 15px;
+}
+
+.wink {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3px 13px 4px 13px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+}
+
+.wink:hover {
+    color: #fff;
+}
+
+.move-wink {
+    text-align: center;
+}
+
+.profile-info {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.h2,
+b {
+    font-weight: bold;
+}
+
+.about {
+    width: 350px;
+    padding: 0px 25px 24px 27px;
+}
+
+.hobbies {
+    text-align: center;
+}
+
+form fieldset {
+    margin: auto;
+    margin-bottom: 32px;
+    
+}
+
+fieldset {
+    width: 620px;
+    border-radius: 10px;
+    border: 2px solid #020202cc;
+    background-color: #a737157a;
+    line-height: 1.6em;
+}
+
+legend {
+    font-style: italic;
+    color: #140b0b;
+    font-weight: bold;
+}
+
+select {
+    top: -37px;
+    display: block;
+    margin: 1em;
+    width: 32.0em;
+    position: relative;
+    left: 2.7em;
+}
+
+.move-textarea {
+    margin-top: -50px;
+    position: relative;
+}
+
+#message {
+    margin-left: 64px;
+    margin-top: -19px;
+}
+
+.submit {
+    float: right;
+    margin-top: -20px;
+    margin-right: 49px;
+    position: relative;
+}
+
+.submit input {
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+label.warning {
+    top: -12px;
+    position: relative;
+}
+
+
+/* search*/
+
+.search-form {
+    font-weight: bold;
+    position: relative;
+}
+
+#search-input{
+   
+    width: 200px;
+    height: 31px;
+    position: absolute;
+
+}
+
+
+i.fa.fa-search.fa-2x{
+    color: black;
+    font-size: 20.5px;
+    /*margin-top: -1px;*/
+    /*background-color: black;*/
+    /*border-radius: 4px;*/
+    /*margin-bottom: 0px;*/
+    /*padding: 1px 2px 2px 1px;*/
+    cursor: pointer;
+   position: relative;
+   right:-176px;
+   top: 5px;
+}
+
+
+/* form section*/
+
+.form-container {
+    margin-top: 290px;
+}
+
+.search-img-container {
+    margin-top: 207px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap; 
+   /* justify-content: center;
+    flex-basis: auto;*/
+}
+
+.search-info {
+    max-width: 750px;
+    margin: auto;
+
+   
+
+}
+
+.search-info img {
+    margin-bottom: -20px;
+    margin-top: 120px;
+}
+
+#ages-range {
+    width: 250px;
+    right: -38px;
+}
+
+.hidden {
+    display: none;
+}

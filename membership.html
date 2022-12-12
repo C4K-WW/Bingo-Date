@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Membership</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/dating.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+</head>
+
+<body>
+    <header>
+         <header class="masthead">
+        <h1 id="logo">
+            <img id="logo-img" src="img/blog.png" height="100">
+        </h1>
+        <h1 class="header">Bingo Date</h1>
+
+
+        <div class="nav-top">
+           <a class="membership-to-home" href="index.html"><img class="img" src="img/button1.png"></a>
+           
+        </div>
+    
+     <h1 id="membership">Join us here</h1>
+ <div class="member">
+    <form method="post"   name="membership" >
+            <div class="gender">
+            <label for="gender" class="required">Gender:</label> </br>
+                <select  name="gender" maxlength="30" id="membersGender" required>                    
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Trans</option>
+                    <option value="gay">Gay</option>
+                    <option value="lesbian">Lesbian</option>
+                    <option value="nondis">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="name">
+                <label for="name" class="required" >Full Name:</label> <br>
+                <input type="text" name="name" size="25" maxlength="30" placeholder="Enter your full name" id="membersfullname" required  title="Please enter your name">
+            </div>
+            <div class="username2" class="required">
+                <label for="username2" class="required">Username:</label> <br>
+                <input type="text" name="password" size="25" placeholder="Username" id="membersUsername" required>
+            </div>
+            <div class="email">
+                 <label for="email" class="required" >Email:</label> <br>
+                <input type="email" name="email" size="25" maxlength="30" placeholder="you@example.com" id="membersEmail" required>
+            </div>
+            <div class="email">
+                <label for="email" class="required">Confirm Email:</label> <br>
+                <input type="email" name="email" size="25" maxlength="30" placeholder="you@example.com" id="membersEmailConfirm" required>
+            </div>
+            <div class="password"> 
+                <label for="Password" class="required">Password:</label> <br>
+                <input type="password" name="password" size="25" placeholder="password"  maxlength="30" id="password" required>
+            </div>
+            <div class="password"> 
+                <label for="confirmpassword" class="required" >Confirm Password:</label> <br>
+                <input type="password" name="confirmpassword" size="25" placeholder="confirm password"   maxlength="30" id="PassConfirm" required>
+            </div>
+            <div class="birthday">
+                <label for="birthday" class="required">Birthday:</label> <br>
+                <input  type="date" name="birthday" id="membersDateOfBirth" placeholder="yyyy-mm-dd" required>
+                <div id="agesConsentContainer" class="hide">
+                    <label for="agesconsent">You must be over 18 to join this site.
+                Tick here if you are 18 above:</label>
+                    <input type="checkbox" name="agesconsent" id="agesconsent">   
+                </div>
+            </div>  
+            <div class="employment"> 
+                <label for="employment" class="required">Employment Status</label> <br>
+                <select name="employ" maxlength="30" id="membersemploy" >
+                    <option value="">Employment</option>
+                    <option value="female">Self employed</option>
+                    <option value="nondis">Prefer not to say</option>
+                    <option value="finance">Finance</option>
+                    <option value="media">Media</option>
+                    <option value="wood">Carpenter</option>
+                </select>
+           </div>     
+             <div class="about-me">   
+                <label for="about-me">About me:(up to 250 characters)</label>
+                <br>
+                <textarea name="about-me" rows="6" cols="40"  id="membershipAboutMe"></textarea>
+            <div>
+                <span id="about-count" class="hide">250</span><br>
+            </div>
+
+            </div>
+            <div class="liketomeet"> 
+                <label for="liketomeet">I like to meet:(up to 250 characters)</label>
+                <br>
+                <textarea name="liketomeet"  rows="6" cols="40"  id="membershipIlikeToMeet"></textarea>
+            <div>
+                <span id="meet-count" class="hide">250</span><br>
+            </div>
+            </div><br>
+            <div class="membersjoin"><input type="submit" id="membersjoin" value="Join Now" size="25" onclick="onMembershipJoinNow()"></div>
+    </form>
+    </div>
+    <footer>
+
+    </footer>
+           
+            <script src="js/jquery-2.2.4.min.js"></script>
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/jquery-ui-1.10.3.custom.js"></script>
+            <script src="js/utilities.js"></script>
+            <script src="js/placeholder-polyfill.js"></script>
+            <script src="js/password-signup.js"></script>
+            <script src="js/login.js"></script>
+            <script src="js/membership-counter.js"></script>
+            <script src="js/birthday.js"></script>
+            <script src="js/validation.js"></script>          
+</body>
+</html>
